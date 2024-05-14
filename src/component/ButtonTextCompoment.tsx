@@ -14,8 +14,9 @@ const ButtonTextCompoment = ({ children, color, isBG, onPress }: props) => {
     <TouchableOpacity
       onPress={onPress}
       style={{
-        backgroundColor: color,
+        borderColor: color,
         borderRadius: 100,
+        borderWidth: 2,
         width: "22%",
         height: "50%",
         justifyContent: "center",
@@ -29,9 +30,8 @@ const ButtonTextCompoment = ({ children, color, isBG, onPress }: props) => {
     <TouchableOpacity
       onPress={onPress}
       style={{
-        borderColor: color,
+        backgroundColor: color,
         borderRadius: 100,
-        borderWidth: 1,
         width: "22%",
         height: "50%",
         justifyContent: "center",

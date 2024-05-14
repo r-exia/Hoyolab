@@ -50,7 +50,7 @@ const HomeScreen = () => {
                 <Text style={StyleGlobal.textInfo}>1 giờ trước - Honkai</Text>
               </View>
 
-              <ButtonTextCompoment color="gray" isBG onPress={handleAd}>
+              <ButtonTextCompoment color="blue" isBG onPress={handleAd}>
                 <Text style={[StyleGlobal.text, { color: "blue" }]}>
                   Theo dõi
                 </Text>
