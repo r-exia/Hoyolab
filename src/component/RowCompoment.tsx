@@ -22,7 +22,6 @@ const RowCompoment = ({
   return (
     <View
       style={[
-        style && style,
         {
           backgroundColor: color,
           minHeight: minHeight,
@@ -31,6 +30,7 @@ const RowCompoment = ({
           height: height,
           flexDirection: "row",
         },
+        style && style,
       ]}
     >
       {children}
