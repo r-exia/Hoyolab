@@ -9,6 +9,7 @@ import React from "react";
 
 import { SafeAreaView } from "react-native-safe-area-context";
 import {
+  AdddocFirebase,
   AvatarComponent,
   ButtonTextCompoment,
   ImageComponent,
@@ -111,6 +112,7 @@ const HomeScreen = () => {
             <RowCompoment height={appInfo.widthWindows / 7}></RowCompoment>
           </View>
         </View>
+        <AdddocFirebase />
       </ScrollView>
     </SafeAreaView>
   );
