@@ -1,0 +1,81 @@
+[{
+    "masp": 1,
+    "tensp": "Áo thun nam",
+    "mau": "Đen",
+    "gia": 100000,
+    "soLuong": 1,
+    "size": "M",
+    "img": "../../assets/rectangle-19.png"
+},
+{
+    "masp": 2,
+    "tensp": "Áo thun nam",
+    "mau": "Đen",
+    "gia": 200000,
+    "soLuong": 1,
+    "size": "M",
+    "img": "../../assets/rectangle-35.png"
+},
+{
+    "masp": 3,
+    "tensp": "Áo thun nam",
+    "mau": "Đen",
+    "gia": 100000,
+    "soLuong": 1,
+    "size": "M",
+    "img": "../../assets/rectangle-19.png"
+},
+{
+    "masp": 4,
+    "tensp": "Áo thun nam",
+    "mau": "Đen",
+    "gia": 200000,
+    "soLuong": 1,
+    "size": "M",
+    "img": "../../assets/rectangle-35.png"},
+{
+    "masp":5,
+    "tensp": "Áo thun nam",
+    "mau": "Đen",
+    "gia": 200000,
+    "soLuong": 1,
+    "size": "M",
+    "img": "../../assets/rectangle-19.png"
+},
+{
+    "masp": 6,
+    "tensp": "Áo thun nam",
+    "mau": "Đen",
+    "gia": 200000,
+    "soLuong": 1,
+    "size": "M",
+    "img": "../../assets/rectangle-35.png"
+},
+{
+    "masp": 7,
+    "tensp": "Áo thun nam",
+    "mau": "Đen",
+    "gia": 100000,
+    "soLuong": 1,
+    "size": "M",
+    "img": "../../assets/rectangle-19.png"
+},
+{
+    "masp": 8,
+    "tensp": "Áo thun nam",
+    "mau": "Đen",
+    "gia": 200000,
+    "soLuong": 1,
+    "size": "M",
+    "img": "../../assets/rectangle-35.png"
+},
+{
+    "masp": 9,
+    "tensp": "Áo thun nam",
+    "mau": "Đen",
+    "gia": 100000,
+    "soLuong": 1,
+    "size": "M",
+    "img": "../../assets/rectangle-19.png"
+}
+]

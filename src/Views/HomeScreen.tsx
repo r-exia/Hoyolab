@@ -18,7 +18,12 @@ import {
 } from "../component";
 import { StylesGlobal } from "../Styles/StylesGlobal";
 
-import { createOneData, getAllData } from "../apis/firebaseComponent";
+import {
+  createOneData,
+  getAllData,
+  updateOneData,
+  ImportFileJson,
+} from "../apis/firebaseComponent";
 
 const HomeScreen = () => {
   let text: string = `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum
@@ -54,6 +59,15 @@ const HomeScreen = () => {
       email: "phihung@gmail.com",
       imageUrl:
         "https://img-os-static.hoyolab.com/communityWeb/upload/40ae5077094f7c08c5120b489361fb3c.png?x-oss-process=image%2Fresize%2Cs_600%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_80",
+    });
+    // ImportFileJson();
+  }, []);
+
+  const handleUpdateOneData = useCallback(() => {
+    updateOneData({
+      name: "",
+      email: "",
+      imageUrl: "",
     });
   }, []);
 
