@@ -22,7 +22,7 @@ import {
   createOneData,
   getAllData,
   updateOneData,
-  ImportFileJson,
+  deleteOneData,
 } from "../apis/firebaseComponent";
 
 const HomeScreen = () => {
@@ -65,6 +65,7 @@ const HomeScreen = () => {
 
   const handleUpdateOneData = useCallback(() => {
     updateOneData({
+      id: "-NyKT3enK8Nu7EMyiseh",
       name: "",
       email: "",
       imageUrl: "",
@@ -73,6 +74,10 @@ const HomeScreen = () => {
 
   const handleGetData = useCallback(() => {
     getAllData();
+  }, []);
+
+  const handleDeleteOneData = useCallback(() => {
+    deleteOneData("-NyKVevQycKQTC63Pmjm");
   }, []);
 
   return (
@@ -135,11 +140,17 @@ const HomeScreen = () => {
             >
               <Text>Create data</Text>
             </TouchableOpacity>
-            <TouchableOpacity
+            {/* <TouchableOpacity
               style={{ backgroundColor: "blue", padding: "5%" }}
               onPress={handleGetData}
             >
               <Text>Get Data</Text>
+            </TouchableOpacity> */}
+            <TouchableOpacity
+              style={{ backgroundColor: "yellow", padding: "5%" }}
+              onPress={handleDeleteOneData}
+            >
+              <Text>Update</Text>
             </TouchableOpacity>
             <RowComponent height={appInfo.widthWindows / 7} />
             <RowComponent height={appInfo.widthWindows / 7} />

@@ -27,28 +27,28 @@ const getAllData = () => {
   });
 };
 
-const dataProduct = require("./data.json");
+// const dataProduct = require("./data.json");
 
-const ImportFileJson = async () => {
-  dataProduct.forEach((data: any) => {
-    const key = push(child(dbRef, "products/")).key;
-    set(child(dbRef, "products/" + key), {
-      id: key,
-      gia: data.gia,
-      img: data.img,
-      mau: data.mau,
-      size: data.size,
-      tensp: data.tensp,
-      soLuong: data.soLuong,
-    })
-      .then(() => {
-        return console.log("Data saved successfully");
-      })
-      .catch((error) => {
-        return console.log("Data saved failed", error);
-      });
-  });
-};
+// const ImportFileJson = async () => {
+//   dataProduct.forEach((data: any) => {
+//     const key = push(child(dbRef, "products/")).key;
+//     set(child(dbRef, "products/" + key), {
+//       id: key,
+//       gia: data.gia,
+//       img: data.img,
+//       mau: data.mau,
+//       size: data.size,
+//       tensp: data.tensp,
+//       soLuong: data.soLuong,
+//     })
+//       .then(() => {
+//         return console.log("Data saved successfully");
+//       })
+//       .catch((error) => {
+//         return console.log("Data saved failed", error);
+//       });
+//   });
+// };
 
 const createOneData = ({
   name,
@@ -91,15 +91,16 @@ const updateOneData = ({
   name,
   email,
   imageUrl,
+  id,
 }: {
   name: string;
   email: string;
   imageUrl: string;
+  id: string;
 }) => {
-  const newPostKey = push(child(dbRef, "users/")).key;
-  console.log(newPostKey);
   const updates: any = {};
-  updates["/users/" + newPostKey] = {
+  updates["users/" + id] = {
+    id: id,
     userName: name,
     email: email,
     imageUrl: imageUrl,
@@ -113,6 +114,16 @@ const updateOneData = ({
     });
 };
 
-export { getAllData, createOneData, updateOneData, ImportFileJson };
+const deleteOneData = (id: string) => {
+  set(child(dbRef, "users/" + id), null)
+    .then(() => {
+      return console.log("Data deleted successfully");
+    })
+    .catch((error) => {
+      return console.log("Data deleted failed", error);
+    });
+};
+
+export { getAllData, createOneData, updateOneData, deleteOneData };
 
 const styles = StyleSheet.create({});
